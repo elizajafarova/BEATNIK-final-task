@@ -1,0 +1,186 @@
+@import "variables";
+@import "mixins";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.input-mobile {
+  display: none;
+  @include mobile {
+    display: block;
+  }
+}
+.input {
+  display: block;
+  @include mobile {
+    display: none;
+  }
+}
+
+body {
+  header {
+    .top {
+      width: 100%;
+      background-color: #013299;
+      height: 25px;
+      text-align: center;
+      @include mobile {
+        height: inherit;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+      }
+    }
+
+    .content {
+      height: 50px;
+      display: flex;
+      text-align: center;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      margin-top: 1em;
+      font-family: "Didact Gothic", sans-serif;
+      .left {
+        font-size: 13px;
+        a {
+          text-decoration: none;
+
+          color: black;
+          font-family: "Didact Gothic", sans-serif;
+          opacity: 0.8;
+          .fa-search {
+            margin-right: 4px;
+            font-size: 20px;
+          }
+        }
+        .input-mobile {
+          .fa2 {
+            @include mobile {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+
+      .logo {
+        img {
+          height: 33px;
+          @include mobile {
+            height: 30px;
+          }
+        }
+      }
+      .right {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 13px;
+        ul {
+          display: flex;
+
+          a {
+            text-decoration: none;
+            color: black;
+            opacity: 0.8;
+            margin: 10px;
+            img {
+              width: 16px;
+              margin-left: 5px;
+            }
+          }
+        }
+        .input-mobile {
+          @include mobile {
+            font-size: 25px;
+            display: flex;
+            img {
+              height: 25px;
+              margin-left: 7px;
+            }
+          }
+        }
+      }
+    }
+
+    .horizantal {
+      border: -2.5px solid rgb(170, 166, 166);
+      @include mobile {
+        border: inherit;
+      }
+    }
+
+    .row {
+      width: 100%;
+      .navbar {
+        font-family: "Josefin Sans", sans-serif;
+        border: inherit;
+        color: black;
+        opacity: 0.8;
+        font-size: 15px;
+        margin: 0 200px;
+        
+        @include mobile {
+          margin: inherit;
+          position: absolute;
+        top: -4rem;
+        left: 2rem;
+        }
+
+        .collapse {
+          .nav-link {
+            margin: 1em;
+          }
+          @include mobile {
+            margin-left: inherit;
+          }
+          .mr-auto {
+            .menu-area {
+              width: 100%;
+              position: static;
+              .mega-area {
+                border: inherit;
+                left: -4em;
+                width: 145%;
+                @include mobile{
+                   width: inherit;
+                   left: inherit;
+                }
+              
+              }
+              .dropdown-item {
+                padding: 5px 0;
+              }
+              .row {
+                flex-wrap: nowrap;
+                padding: 0;
+                @include mobile {
+                  flex-wrap: wrap;
+                }
+                .image {
+                  max-width: inherit;
+                  img {
+                    height: 160px;
+                  }
+                  p {
+                    text-align: center;
+                  }
+                }
+              }
+            }
+            .menu-area2 {
+              width: 100%;
+              .mega-area2 {
+                border: inherit;
+                left: 0;
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.input-mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .input-mobile {
+    display: block;
+  }
+}
+
+.input {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .input {
+    display: none;
+  }
+}
+
+body header .top {
+  width: 100%;
+  background-color: #013299;
+  height: 25px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  body header .top {
+    height: inherit;
+  }
+}
+
+body header .top a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+
+body header .content {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 1em;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+body header .content .left {
+  font-size: 13px;
+}
+
+body header .content .left a {
+  text-decoration: none;
+  color: black;
+  font-family: "Didact Gothic", sans-serif;
+  opacity: 0.8;
+}
+
+body header .content .left a .fa-search {
+  margin-right: 4px;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  body header .content .left .input-mobile .fa2 {
+    font-size: 25px;
+  }
+}
+
+body header .content .logo img {
+  height: 33px;
+}
+
+@media (max-width: 767px) {
+  body header .content .logo img {
+    height: 30px;
+  }
+}
+
+body header .content .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 13px;
+}
+
+body header .content .right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .content .right ul a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
+  margin: 10px;
+}
+
+body header .content .right ul a img {
+  width: 16px;
+  margin-left: 5px;
+}
+
+@media (max-width: 767px) {
+  body header .content .right .input-mobile {
+    font-size: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body header .content .right .input-mobile img {
+    height: 25px;
+    margin-left: 7px;
+  }
+}
+
+body header .horizantal {
+  border: -2.5px solid #aaa6a6;
+}
+
+@media (max-width: 767px) {
+  body header .horizantal {
+    border: inherit;
+  }
+}
+
+body header .row {
+  width: 100%;
+}
+
+body header .row .navbar {
+  font-family: "Josefin Sans", sans-serif;
+  border: inherit;
+  color: black;
+  opacity: 0.8;
+  font-size: 15px;
+  margin: 0 200px;
+}
+
+@media (max-width: 767px) {
+  body header .row .navbar {
+    margin: inherit;
+    position: absolute;
+    top: -4rem;
+    left: 2rem;
+  }
+}
+
+body header .row .navbar .collapse .nav-link {
+  margin: 1em;
+}
+
+@media (max-width: 767px) {
+  body header .row .navbar .collapse {
+    margin-left: inherit;
+  }
+}
+
+body header .row .navbar .collapse .mr-auto .menu-area {
+  width: 100%;
+  position: static;
+}
+
+body header .row .navbar .collapse .mr-auto .menu-area .mega-area {
+  border: inherit;
+  left: -4em;
+  width: 145%;
+}
+
+@media (max-width: 767px) {
+  body header .row .navbar .collapse .mr-auto .menu-area .mega-area {
+    width: inherit;
+    left: inherit;
+  }
+}
+
+body header .row .navbar .collapse .mr-auto .menu-area .dropdown-item {
+  padding: 5px 0;
+}
+
+body header .row .navbar .collapse .mr-auto .menu-area .row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  body header .row .navbar .collapse .mr-auto .menu-area .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+body header .row .navbar .collapse .mr-auto .menu-area .row .image {
+  max-width: inherit;
+}
+
+body header .row .navbar .collapse .mr-auto .menu-area .row .image img {
+  height: 160px;
+}
+
+body header .row .navbar .collapse .mr-auto .menu-area .row .image p {
+  text-align: center;
+}
+
+body header .row .navbar .collapse .mr-auto .menu-area2 {
+  width: 100%;
+}
+
+body header .row .navbar .collapse .mr-auto .menu-area2 .mega-area2 {
+  border: inherit;
+  left: 0;
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */
