@@ -5,6 +5,7 @@
   margin: 0;
   list-style: none;
 }
+// Navbar mobile
 .input-mobile {
   display: none;
   @include mobile {
@@ -111,6 +112,7 @@ body {
         border: inherit;
       }
     }
+    // Navbar Desktop
     .row {
       width: 100%;
       .navbar {
