@@ -19,11 +19,12 @@
 }
 
 body {
+  // Main html
   header {
     .top {
       width: 100%;
       background-color: #013299;
-      height: 25px;
+      height: 27px;
       text-align: center;
       @include mobile {
         height: inherit;
@@ -34,7 +35,6 @@ body {
         font-size: 13px;
       }
     }
-
     .content {
       height: 50px;
       display: flex;
@@ -61,6 +61,7 @@ body {
           .fa2 {
             @include mobile {
               font-size: 25px;
+              margin-left: 2rem;
             }
           }
         }
@@ -68,7 +69,7 @@ body {
 
       .logo {
         img {
-          height: 33px;
+          height: 31px;
           @include mobile {
             height: 30px;
           }
@@ -104,37 +105,40 @@ body {
         }
       }
     }
-
     .horizantal {
       border: -2.5px solid rgb(170, 166, 166);
       @include mobile {
         border: inherit;
       }
     }
-
     .row {
       width: 100%;
       .navbar {
         font-family: "Josefin Sans", sans-serif;
         border: inherit;
         color: black;
-        opacity: 0.8;
-        font-size: 15px;
+        font-size: 14px;
         margin: 0 200px;
-        
+        z-index: 1;
         @include mobile {
           margin: inherit;
           position: absolute;
-        top: -4rem;
-        left: 2rem;
+          top: -4rem;
+          margin-left: -2rem;
+        }
+        button {
+          @include mobile {
+            font-size: 15px;
+            border: none;
+          }
         }
 
         .collapse {
           .nav-link {
-            margin: 1em;
+            margin: 0 1em;
           }
           @include mobile {
-            margin-left: inherit;
+            background-color: white;
           }
           .mr-auto {
             .menu-area {
@@ -142,13 +146,24 @@ body {
               position: static;
               .mega-area {
                 border: inherit;
-                left: -4em;
-                width: 145%;
-                @include mobile{
-                   width: inherit;
-                   left: inherit;
+                left: -20em;
+                width: 198%;
+                .ss {
+                  margin-left: 1em;
+                  @include mobile {
+                    margin-left: 0;
+                  }
                 }
-              
+                h5 {
+                  font-size: 12px;
+                }
+                .zz {
+                  color: rgb(129, 12, 12);
+                }
+                @include mobile {
+                  width: inherit;
+                  left: inherit;
+                }
               }
               .dropdown-item {
                 padding: 5px 0;
@@ -180,6 +195,1016 @@ body {
             }
           }
         }
+      }
+    }
+  }
+  main {
+    #myCarousel {
+      .carousel-inner {
+        .carousel-item {
+          .ust {
+            top: 20rem;
+            left: 4rem;
+            text-align: start;
+            @include mobile {
+              color: black;
+              text-align: center;
+              position: initial;
+              font-size: 20px;
+            }
+            .strong {
+              font-size: 80px;
+              width: 57%;
+              font-weight: 700;
+              @include mobile {
+                font-size: 35px;
+                width: inherit;
+              }
+            }
+            .btn {
+              font-size: 15px;
+              border-radius: 0;
+              &:hover {
+                background-color: black;
+                color: white;
+                border: black;
+              }
+              @include mobile {
+                border: 1px solid black;
+                font-size: 15px;
+              }
+            }
+          }
+          .sag {
+            top: 5rem;
+            right: 2rem;
+            text-align: end;
+            @include mobile {
+              color: black;
+              text-align: center;
+              position: initial;
+              font-size: 20px;
+            }
+            .strong2 {
+              font-size: 96px;
+              font-weight: 700;
+              @include mobile {
+                font-size: 40px;
+              }
+            }
+            .btn {
+              margin-top: 1em;
+              font-size: 15px;
+              border-radius: 0;
+              &:hover {
+                background-color: black;
+                color: white;
+                border: black;
+              }
+              @include mobile {
+                border: 1px solid black;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .text {
+      font-family: "Cabin", sans-serif;
+      text-align: center;
+      margin: 5rem 390px 5rem 390px;
+      font-size: 20px;
+      color: #637381;
+      letter-spacing: 1px;
+      @include mobile {
+        margin: 2em 0;
+      }
+      a {
+        text-decoration: none;
+        color: #637381;
+        border-bottom: 1px solid grey;
+        &:hover {
+          color: rgb(12, 12, 12);
+        }
+      }
+    }
+    .middle {
+      .row {
+        padding: 0;
+        width: 100%;
+        .card {
+          border: none;
+          border-radius: 0;
+          left: 15px;
+          font-family: "Josefin Sans", sans-serif;
+          margin-top: 1em;
+          .card-img-overlay {
+            background-color: #fff;
+            color: black;
+            right: initial;
+            top: initial;
+            left: initial;
+            .card-title {
+              font-size: 14px;
+            }
+            .card-text {
+              font-size: 20px;
+              font-weight: 900;
+            }
+            a {
+              text-decoration: none;
+              color: black;
+              border-bottom: 0.5px solid gray;
+            }
+          }
+        }
+      }
+    }
+    .main-div {
+      margin-top: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      a {
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(32, 23, 23);
+        font-weight: 700;
+        font-family: "Josefin Sans", sans-serif;
+        img {
+          height: 13px;
+        }
+      }
+      .view {
+        h6 {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 13px;
+          color: #333029;
+        }
+      }
+    }
+    .body-div {
+      .card-deck {
+        width: 100%;
+        padding: 0;
+        .card {
+          border: none;
+          left: 15px;
+          @include mobile {
+            left: initial;
+          }
+          .card-img-top {
+            border-radius: 0;
+          }
+          .card-body {
+            font-family: "Josefin Sans", sans-serif;
+            .card-title {
+              text-align: center;
+            }
+            .card-text {
+              text-align: center;
+              .red {
+                color: rgb(119, 7, 7);
+              }
+            }
+          }
+        }
+      }
+    }
+    .card-div {
+      font-family: "Josefin Sans", sans-serif;
+      .card {
+        width: 100%;
+        height: 520px;
+        margin-top: 3em;
+        border: none;
+        padding: 0;
+        background-color: #f6f6f6;
+        @include mobile {
+          height: 626px;
+        }
+        .no-gutters {
+          .first {
+            left: 20px;
+            @include mobile {
+              left: initial;
+            }
+            img {
+              margin-top: 2.5em;
+            }
+          }
+          .second {
+            .card-body {
+              margin-top: 5em;
+              margin-left: 7em;
+              @include mobile {
+                margin-left: initial;
+                margin-top: 2em;
+              }
+              .card-text {
+                width: 535px;
+                font-size: 35px;
+                @include mobile {
+                  font-size: 15px;
+                  width: initial;
+                }
+              }
+              .card-textt {
+                width: 480px;
+                @include mobile {
+                  width: 300px;
+                }
+              }
+              .button {
+                color: white;
+                background-color: #09245f;
+                border: 1px solid #09245f;
+                font-size: 16px;
+                margin-top: 1em;
+                border-radius: 0;
+                &:hover {
+                  background-color: black;
+                  border: 1px solid black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .col-div {
+      font-family: "Josefin Sans", sans-serif;
+      margin-top: 4em;
+      .row-div {
+        padding: 0;
+        width: 100%;
+        .main-text {
+          margin-top: 10rem;
+          text-align: center;
+          font-size: 23px;
+          left: 1em;
+          @include mobile {
+            font-size: initial;
+            margin-top: initial;
+          }
+          .h2 {
+            font-weight: 900;
+          }
+          .opacity {
+            opacity: 0.8;
+          }
+          .button2 {
+            color: white;
+            background-color: white;
+            font-size: 13px;
+            border: 1px solid black;
+            color: black;
+            border-radius: 0;
+            &:hover {
+              background-color: black;
+              color: white;
+            }
+          }
+        }
+        .imgg {
+          margin-top: 4em;
+          position: relative;
+          .imagee1 {
+            width: 310px;
+            position: absolute;
+            margin-top: 3em;
+            margin-left: 2em;
+            @include mobile {
+              width: 205px;
+              margin-left: 1em;
+            }
+          }
+          .imagee2 {
+            width: 300px;
+            margin-left: 18em;
+            @include mobile {
+              width: 196px;
+              margin-left: 10em;
+            }
+          }
+        }
+      }
+    }
+    .videoContainer {
+      width: 100%;
+      margin-top: 7em;
+      position: relative;
+
+      video {
+        width: 100%;
+      }
+      .overlay-text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 18em;
+        text-align: center;
+        color: white;
+        letter-spacing: 1px;
+        @include mobile {
+          top: 2em;
+        }
+        h1 {
+          font-size: 90px;
+          font-weight: 700;
+          @include mobile {
+            font-size: initial;
+          }
+        }
+        .button3 {
+          background-color: white;
+          font-size: 17px;
+          color: black;
+          border-radius: 0;
+          @include mobile {
+            font-size: 10px;
+          }
+          &:hover {
+            background-color: black;
+            color: white;
+            border: black;
+          }
+        }
+      }
+    }
+    .glasses {
+      width: 100%;
+      margin-top: 4em;
+      .glass {
+        margin: 0;
+        .glass1 {
+          border: none;
+          font-family: "Josefin Sans", sans-serif;
+          .img-top-2 {
+            margin: 0 5px;
+            border-radius: 0;
+            @include mobile {
+              margin: 0;
+            }
+          }
+          .card-body {
+            color: gray;
+            .esas {
+              font-size: 15px;
+            }
+            .elave {
+              font-weight: 700;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .card-div-2 {
+      .card {
+        width: 100%;
+        height: 520px;
+        margin-top: 3em;
+        border: none;
+        padding: 0;
+        background-color: #f6f6f6;
+        @include mobile {
+          height: 620px;
+        }
+        .no-gutters-2 {
+          margin: 0;
+          .first-2 {
+            .card-body-2 {
+              margin-top: 9em;
+              left: 4em;
+              text-align: center;
+              @include mobile {
+                margin-top: 4em;
+              }
+              .card-text-2 {
+                font-weight: 700;
+                font-size: 27px;
+              }
+              .card-textt-2 {
+                a {
+                  text-decoration: none;
+                  border-bottom: 1px solid black;
+                  color: black;
+                }
+              }
+              .button5 {
+                color: white;
+                background-color: #01246e;
+                border: 1px solid #01246e;
+                font-size: 16px;
+                margin-top: 1em;
+                border-radius: 0;
+                &:hover {
+                  background-color: black;
+                  border: 1px solid black;
+                }
+              }
+            }
+          }
+          .second-2 {
+            right: 20px;
+            @include mobile {
+              right: 0;
+            }
+            img {
+              margin-top: 2.5em;
+            }
+          }
+        }
+      }
+    }
+    .middle-text {
+      margin-top: 4em;
+      text-align: center;
+      font-family: "Josefin Sans", sans-serif;
+      h4 {
+        font-weight: 900;
+      }
+    }
+    .bootstrap {
+      .style {
+        margin: 0;
+        .intro {
+          width: 100%;
+          padding: 0;
+          .edit {
+            border: none;
+            img {
+              width: 93%;
+              margin-left: 22px;
+              @include mobile {
+                width: 85%;
+                margin-left: 29px;
+              }
+            }
+            .cap {
+              font-family: "Josefin Sans", sans-serif;
+              @include mobile {
+                margin-left: 9px;
+              }
+              .one {
+                font-weight: 900;
+                font-size: 20px;
+              }
+              .two {
+                color: #465152;
+              }
+              .last {
+                color: #465152;
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .end {
+      margin-top: 4em;
+      .end-row {
+        margin: 0;
+        width: 100%;
+        font-family: "Josefin Sans", sans-serif;
+        line-height: 18px;
+        @include mobile {
+          flex-direction: column;
+        }
+        .end-text {
+          background-color: #153171;
+          text-align: start;
+          color: white;
+          height: 336px;
+          @include mobile {
+            max-width: initial;
+          }
+          h3 {
+            margin-top: 2em;
+            @include mobile {
+              margin-top: 1em;
+            }
+          }
+          .button6 {
+            border-radius: 0;
+            @include mobile {
+              margin-bottom: 20px;
+            }
+            &:hover {
+              background-color: black;
+              color: white;
+              border: black;
+            }
+          }
+        }
+        .packaging {
+          img {
+            width: 440px;
+            height: 336px;
+            margin-left: -1em;
+            @include mobile {
+              width: 376px;
+              height: initial;
+            }
+          }
+        }
+        .iframee {
+          margin-left: -2em;
+          iframe {
+            width: 467px;
+            height: 336px;
+            @include mobile {
+              width: 392px;
+              height: 305px;
+            }
+          }
+        }
+      }
+    }
+    .layout-icon {
+      font-family: "Josefin Sans", sans-serif;
+      background-color: rgb(238, 238, 238);
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+      align-items: center;
+      height: 88px;
+      margin-top: -5px;
+      border-bottom: 0.5px solid rgb(201, 201, 201);
+      @include mobile {
+        flex-direction: column;
+        height: 380px;
+        margin-top: -1em;
+      }
+      .icon-with-caption {
+        justify-content: space-evenly;
+        text-align: center;
+        @include mobile {
+          margin-top: 2em;
+        }
+        img {
+          height: 30px;
+        }
+        .icon-with-text {
+          margin-top: 5px;
+          h6 {
+            font-weight: 900;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .container-footer {
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-top: 3em;
+      .section-footer {
+        width: 100%;
+        padding: 0;
+        font-family: "Josefin Sans", sans-serif;
+        @include mobile {
+          flex-direction: column;
+        }
+        h6 {
+          font-weight: 900;
+          @include mobile {
+            margin-bottom: 1em;
+          }
+        }
+        .section-main {
+          @include mobile {
+            max-width: initial;
+          }
+          .about {
+            p {
+              width: 87%;
+              margin-top: 2em;
+              color: gray;
+            }
+          }
+          .social {
+            ul {
+              display: flex;
+
+              img {
+                width: 20px;
+                margin-right: 12px;
+              }
+            }
+          }
+        }
+        .section-body {
+          @include mobile {
+            max-width: initial;
+            margin-top: 1em;
+          }
+          .menu-block {
+            margin-top: 2em;
+            @include mobile {
+              margin-top: 0;
+            }
+            ul {
+              a {
+                text-decoration: none;
+                color: gray;
+                transition: 0.7s;
+                line-height: 2em;
+                &:hover {
+                  color: rgb(187, 179, 179);
+                }
+              }
+            }
+          }
+        }
+        .section-end {
+          @include mobile {
+            max-width: initial;
+          }
+          .section-footer-text {
+            margin-top: 2em;
+            color: gray;
+          }
+          .signup-form {
+            font-size: 25px;
+            border: gray;
+            .button7 {
+              margin-top: 1em;
+              border-radius: 0;
+              color: white;
+              background-color: #04349c;
+              border: #04349c;
+              font-size: 19px;
+              &:hover {
+                background-color: black;
+                border: black;
+              }
+            }
+          }
+        }
+      }
+    }
+    .horizantal2 {
+      color: gray;
+      margin-top: 2em;
+    }
+    .section-footer-row {
+      padding: 0;
+      width: 100%;
+      margin-bottom: 5em;
+      @include mobile {
+        flex-direction: column;
+      }
+      .tag {
+        margin-top: 1em;
+        margin-left: 2em;
+        font-size: 12px;
+        color: gray;
+        @include mobile {
+          max-width: initial;
+          margin-left: 1em;
+        }
+        span {
+          @include mobile {
+            font-size: 17px;
+          }
+        }
+      }
+      .payment {
+        ul {
+          display: flex;
+          margin-left: 17em;
+          @include mobile {
+            margin-left: 0;
+          }
+          a {
+            img {
+              height: 25px;
+              width: 50px;
+              margin-right: 15px;
+              @include mobile {
+                width: initial;
+                margin-left: 30px;
+                height: 20px;
+                margin-right: 9px;
+                margin-top: 1em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Blog style
+  .reklam-glass {
+    margin-top: 2em;
+    margin-bottom: 3em;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    h4 {
+      font-weight: bold;
+      @include mobile {
+        font-size: 2em;
+      }
+    }
+  }
+  .div-icon {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    opacity: 0.6;
+    display: flex;
+    justify-content: space-between;
+  }
+  // Collection style
+  .page {
+    width: 100%;
+    margin-bottom: 2em;
+    form {
+      font-family: "Josefin Sans", sans-serif;
+      margin-left: 3em;
+      color: black;
+      opacity: 0.8;
+      select {
+        border-radius: 0;
+        font-size: 20px;
+      }
+    }
+  }
+  .metn {
+    .card-deck {
+      width: 100%;
+      padding: 0;
+      .metn2 {
+        border: none;
+        left: 15px;
+        @include mobile {
+          left: initial;
+        }
+        .sekil {
+          border-radius: 0;
+        }
+        .metn3 {
+          font-family: "Josefin Sans", sans-serif;
+          .card-title {
+            text-align: center;
+          }
+          .metn4 {
+            text-align: center;
+            .red {
+              color: rgb(119, 7, 7);
+            }
+          }
+        }
+      }
+    }
+  }
+  // Template page
+  .story {
+    width: 100%;
+    .bg-image {
+      height: 800px;
+      background-image: url("https://cdn.shopify.com/s/files/1/0237/1225/files/The-Dunes-37_1512x.jpg?v=1595243982");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: gray;
+      background-position: center;
+      @include mobile {
+        height: 265px;
+        width: 374px;
+      }
+      .story-text {
+        text-align: center;
+        color: black;
+        margin-top: 14em;
+        margin-left: 25em;
+        position: absolute;
+        font-family: "Josefin Sans", sans-serif;
+        @include mobile {
+          margin-left: 0;
+          position: initial;
+          margin-top: 0;
+        }
+        small {
+          font-weight: 900;
+        }
+        h1 {
+          font-weight: 900;
+          font-size: 97px;
+          @include mobile {
+            font-size: initial;
+          }
+        }
+        p {
+          font-size: 21px;
+          font-weight: 900;
+          @include mobile {
+            font-size: initial;
+          }
+        }
+      }
+    }
+  }
+  .article {
+    margin-top: 4em;
+    text-align: center;
+    padding-left: 20em;
+    padding-right: 20em;
+
+    @include mobile {
+      padding: 0;
+    }
+    h4 {
+      font-weight: 900;
+    }
+  }
+  .flexible-middle {
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    height: 500px;
+    .fully-spaced {
+      padding: 0;
+      width: 100%;
+      .feature-text {
+        margin-top: 10rem;
+        text-align: center;
+        font-size: 20px;
+        @include mobile {
+          font-size: initial;
+          margin-top: 7em;
+        }
+        .major-title {
+          font-weight: 900;
+          font-size: 28px;
+        }
+        .user-content {
+          opacity: 0.8;
+        }
+        .spaced {
+          color: white;
+          background-color: rgb(0, 0, 112);
+          font-size: 15px;
+          border: 1px solid rgb(0, 0, 112);
+          color: white;
+          border-radius: 0;
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+      }
+      .column-half {
+        margin-top: 4em;
+        position: relative;
+        .overlap-image {
+          width: 310px;
+          position: absolute;
+          margin-top: 3em;
+          margin-left: 2em;
+          @include mobile {
+            width: 210px;
+            margin-left: 2em;
+          }
+        }
+        .overlap-image2 {
+          width: 300px;
+          margin-left: 18em;
+          @include mobile {
+            width: 200px;
+            margin-left: 10em;
+          }
+        }
+      }
+    }
+  }
+  .shopify {
+    width: 100%;
+    @include mobile {
+      margin-top: 17em;
+    }
+    .bg-image {
+      margin-top: 3em;
+      height: 800px;
+      background-image: url("https://cdn.shopify.com/s/files/1/0237/1225/files/C82A9963-bcorp_1512x.jpg?v=1595250511");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: gray;
+      background-position: center;
+      @include mobile {
+        height: 265px;
+        width: 374px;
+      }
+      .shopify-text {
+        margin-left: 3em;
+        text-align: start;
+        color: white;
+        margin-top: 13em;
+        position: absolute;
+        font-family: "Josefin Sans", sans-serif;
+        @include mobile {
+          position: initial;
+          margin-top: 0;
+          margin-left: 0;
+          text-align: center;
+        }
+
+        h1 {
+          font-weight: 900;
+          font-size: 60px;
+          @include mobile {
+            font-size: initial;
+          }
+        }
+        p {
+          font-size: 17px;
+          @include mobile {
+            font-size: initial;
+          }
+        }
+      }
+    }
+  }
+  .flexible-middle {
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    height: 500px;
+    .fully-spaced {
+      padding: 0;
+      width: 100%;
+      .feature-text-paired {
+        margin-top: 10rem;
+        text-align: start;
+        @include mobile {
+          font-size: initial;
+          margin-top: 7em;
+          margin-left: 3em;
+        }
+        .major-title2 {
+          font-weight: 900;
+          font-size: 20px;
+        }
+        .user-content2 {
+          opacity: 0.8;
+          width: 73%;
+        }
+        .spaced {
+          color: white;
+          background-color: rgb(0, 0, 112);
+          font-size: 15px;
+          border: 1px solid rgb(0, 0, 112);
+          color: white;
+          border-radius: 0;
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+      }
+      .medium {
+        margin-top: 4em;
+        position: relative;
+        .overlap-image-shopify {
+          width: 320px;
+          position: absolute;
+          margin-top: 3em;
+          margin-left: 3em;
+          @include mobile {
+            width: 210px;
+            margin-left: 2em;
+          }
+        }
+        .overlap-image-shopify2 {
+          width: 320px;
+          margin-left: 20em;
+          @include mobile {
+            width: 200px;
+            margin-left: 10em;
+          }
+        }
+      }
+    }
+  }
+  .text-2 {
+    font-family: "Cabin", sans-serif;
+    text-align: center;
+    margin: 5rem 390px 5rem 390px;
+    font-size: 20px;
+    color: #637381;
+    letter-spacing: 1px;
+    @include mobile {
+      margin: 14em 0 3em 0;
+    }
+    a {
+      text-decoration: none;
+      color: #637381;
+      border-bottom: 1px solid grey;
+      &:hover {
+        color: rgb(12, 12, 12);
       }
     }
   }
