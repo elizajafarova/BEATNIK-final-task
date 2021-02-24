@@ -624,8 +624,12 @@ body {
       margin-top: 4em;
       text-align: center;
       font-family: "Josefin Sans", sans-serif;
-      h4 {
-        font-weight: 900;
+      a {
+        text-decoration: none;
+        color: black;
+        h4 {
+          font-weight: 900;
+        }
       }
     }
     .bootstrap {

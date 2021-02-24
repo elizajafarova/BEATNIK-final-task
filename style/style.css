@@ -800,7 +800,12 @@ body main .middle-text {
   font-family: "Josefin Sans", sans-serif;
 }
 
-body main .middle-text h4 {
+body main .middle-text a {
+  text-decoration: none;
+  color: black;
+}
+
+body main .middle-text a h4 {
   font-weight: 900;
 }
 
